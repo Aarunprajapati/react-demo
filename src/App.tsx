@@ -3,7 +3,8 @@ import "./App.css";
 import { RouterProvider } from "react-router-dom";
 import { Myrouter } from "./config/MyRouter";
 import { envConfig } from "./config/envConfig";
-const Mainlayout = lazy(() => import(`./clients/${envConfig.orgName}/main/Mainlayout.tsx`));
+const Mainlayout = lazy(() => import(`./clients/${envConfig.orgName}/main/MainLayout.tsx`));
+
 
 function App() {
   return (

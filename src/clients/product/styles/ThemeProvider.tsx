@@ -5,7 +5,7 @@ interface IThemeProvider {
     children: ReactNode
 }
 
-export const Theme: ThemeConfig = {
+const Theme: ThemeConfig = {
     token: {
         fontFamily: 'Poppins',
     },

@@ -1,11 +1,10 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 
 const AuthWrapper = () => {
-  const navigate = useNavigate();
 
   const token = localStorage.getItem("token");
 
-  if (!token) navigate("/login");
+  if (!token) return <Navigate to={'/login'} />
   return <Outlet/>;
 };
 
