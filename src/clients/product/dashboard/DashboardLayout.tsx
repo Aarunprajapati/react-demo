@@ -1,10 +1,11 @@
+import { Button } from "antd"
 
 
 const DashboardLayout = () => {
   return (
-    <div>
+    <Button type="text">
       DashboardLayout
-    </div>
+    </Button>
   )
 }
 

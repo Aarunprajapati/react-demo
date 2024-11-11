@@ -11,10 +11,12 @@ const Theme: ThemeConfig = {
     },
     components: {
         Button: {
-            colorText: '#fff',
-            primaryColor: '#00AEEF',
-            colorPrimaryActive: '#00AEEF',
-            colorPrimaryHover: '#00AEEF',
+            colorPrimary: '#0068fa',
+            colorPrimaryHover: '#0068fa',
+            primaryColor: '#fff',
+            colorPrimaryActive: '#0068fa',
+            defaultBorderColor: '#0068fa',
+            defaultColor: '#0068fa'
         },
     },
 }
