@@ -1,11 +1,7 @@
-
+import { Button } from 'antd'
 
 const LoginLayout = () => {
-  return (
-    <div>
-      LoginLayout
-    </div>
-  )
+    return <Button>LoginLayout</Button>
 }
 
 export default LoginLayout
