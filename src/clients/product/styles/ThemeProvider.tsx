@@ -16,7 +16,7 @@ const Theme: ThemeConfig = {
             primaryColor: '#fff',
             colorPrimaryActive: '#0068fa',
             defaultBorderColor: '#0068fa',
-            defaultColor: '#0068fa'
+            defaultColor: '#0068fa',
         },
     },
 }

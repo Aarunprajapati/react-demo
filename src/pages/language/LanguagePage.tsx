@@ -9,7 +9,7 @@ const LanguagePage = () => {
 
     const changeLanguage = (language: string) => {
         i18n.changeLanguage(language);
-        // localStorage.setItem("language", language);
+        localStorage.setItem("language", language);
     };
     const props = {
         changeLanguage

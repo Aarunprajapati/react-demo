@@ -26,10 +26,10 @@ const BaseQueryfunction: BaseQueryFn<
 > = async (args, api, extraOptions) => {
     const result = await baseQuery(args, api, extraOptions)
 
-    const status = result?.data
+    const status = result?.error?.status
     if (status === 511) {
         localStorage.clear()
-        throw new Error('Network Authentication Required')
+        window.location.href = '/login'
     }
     return result
 }
