@@ -5,7 +5,8 @@ const LanguageLayout = (props:any) => {
     return (
         <div>
             <button onClick={() => changeLanguage('en')}>English</button>
-            <button onClick={() => changeLanguage('hi')}>हिन्दी</button>
+            <button onClick={() => changeLanguage('hn')}>हिन्दी</button>
+            <button onClick={() => changeLanguage('pb')}>Panjabi</button>
         </div>
     )
 }

@@ -8,15 +8,15 @@ i18n.use(HttpApi)
     .use(initReactI18next)
     .init({
         fallbackLng: 'en',
-        supportedLngs: ['en', 'hn'],
+        supportedLngs: ['en', 'hn', 'pb'],
         debug: true,
 
         backend: {
             loadPath: '/locales/{{lng}}.json',
         },
         detection: {
-            order: ['localStorage', 'navigator'],
-            caches: ['localStorage'],
+            order: ['cookie','localStorage', 'navigator'],
+            caches: ['cookie', 'localStorage'],
         },
     })
 
