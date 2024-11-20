@@ -4,7 +4,8 @@ interface IMainLayoutProps {
 
 const Mainlayout = ({ children }: IMainLayoutProps) => {
     return (
-        <div className="flex h-screen w-screen flex-col items-center mt-5">
+        <div className="flex h-screen">
+
             {children}
         </div>
     )

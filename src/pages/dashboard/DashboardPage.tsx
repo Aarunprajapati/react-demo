@@ -6,6 +6,7 @@ const DashboardLayout = lazy(
 )
 
 const DashboardPage = () => {
+    
     const props = {}
     return <DashboardLayout {...props} />
 }
