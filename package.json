@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/charts": "^2.2.3",
     "@reduxjs/toolkit": "^2.3.0",
     "antd": "^5.21.6",
     "i18next": "^23.16.5",

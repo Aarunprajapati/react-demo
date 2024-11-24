@@ -12,12 +12,16 @@ export const Myrouter = createBrowserRouter([
     errorElement: <div>Not Found</div>,
     children: [
       {
-        path: 'dashboard',
-        element: <DashboardPage />
-      },
-      {
-        path: 'language',
-        element: <LanguagePage />
+        path: "/",
+        element: <DashboardPage />,
+        children: [
+
+          {
+            path: "/language",
+            element: <LanguagePage />
+          },
+
+        ]
       }
     ],
   },

@@ -1,13 +1,12 @@
-import { useTranslation } from "react-i18next"
+import LineChart from "./components/LineChart"
 
 
 const DashboardLayout = () => {
 
-  
-  const { t } = useTranslation()
+
   return (
     <div>
-      {t('greeting')}
+      <LineChart />
     </div>
   )
 }

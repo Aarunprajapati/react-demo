@@ -1,5 +1,5 @@
 import { Navigate, Outlet } from "react-router-dom";
-import SideMenu from "../pages/dashboard/components/SideMenu";
+
 
 const AuthWrapper = () => {
 
@@ -7,7 +7,7 @@ const AuthWrapper = () => {
 
   if (!token) return <Navigate to={'/login'} />
   return <>
-  <SideMenu/>
+ 
   <Outlet/>;
   </>
 };
