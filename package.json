@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "product": "vite --mode product --host",
+    "generate-pwa-assets": "pwa-assets-generator --preset minimal public/logo.svg",
     "build": "tsc -b && vite build",
     "productbuild": " tsc && vite build ",
     "lint": "eslint .",
@@ -31,6 +32,7 @@
     "@types/node": "^22.9.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
