@@ -1,12 +1,9 @@
 
 import { Button, Checkbox, Form, Input, Typography } from 'antd';
 
-const LoginLayout = (props: any) => {
+const Registerlayout = (props: any) => {
 
-    const { LoginForm,
-        handleOnSubmit,
-        registerClick
-    } = props;
+    const { loginClick } = props
 
     const { Text } = Typography
     return (
@@ -15,12 +12,12 @@ const LoginLayout = (props: any) => {
 
             <Form
                 name='login'
-                form={LoginForm}
+                // form={LoginForm}
                 labelCol={{ span: 8 }}
                 wrapperCol={{ span: 16 }}
                 style={{ maxWidth: 600 }}
                 initialValues={{ remember: true }}
-                onFinish={handleOnSubmit}
+                // onFinish={handleOnSubmit}
 
                 autoComplete="off"
 
@@ -48,15 +45,15 @@ const LoginLayout = (props: any) => {
 
                 <Form.Item label={null}>
                     <Button type="primary" htmlType="submit" >
-                        Sign In
+                        Signup
                     </Button>
                 </Form.Item>
-                <div onClick={registerClick}>
-                    <Text> Sign up now </Text>
+                <div onClick={loginClick}>
+                    <Text> Sign In </Text>
                 </div>
             </Form>
         </div>
     )
 }
 
-export default LoginLayout
+export default Registerlayout

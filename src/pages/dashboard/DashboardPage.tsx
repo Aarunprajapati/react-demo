@@ -53,6 +53,7 @@ const DashboardPage: React.FC = () => {
                 collapsed={collapsed}
                 breakpoint="xs"
                 onBreakpoint={(broken) => setCollapsed(broken)}
+                className='h-screen'
             
             >
                 <div className="w-12 h-12 m-4 mx-auto bg-white rounded-full" />

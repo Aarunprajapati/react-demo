@@ -11,7 +11,7 @@ const LoginLayout = lazy(
 
 const LoginPage = () => {
     const token = localStorage.getItem('token')
-    const [login, { isFetching }] = useLazyLoginQuery()
+    const [login] = useLazyLoginQuery()
 
     const navigate = useNavigate()
     const [LoginForm] = Form.useForm()
@@ -35,6 +35,10 @@ const LoginPage = () => {
             navigate('/dashboard')
         }
     }
+
+    const registerClick = ()=>{
+        navigate('/register')
+    }
     useEffect(() => {
         if (token) {
             navigate('/dashboard')
@@ -44,7 +48,7 @@ const LoginPage = () => {
     const props = {
         form: LoginForm,
         handleOnSubmit,
-        isFetching,
+        registerClick
     }
     return <LoginLayout {...props} />
 }
