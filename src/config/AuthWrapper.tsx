@@ -7,8 +7,7 @@ const AuthWrapper = () => {
 
   if (!token) return <Navigate to={'/login'} />
   return <>
- 
-  <Outlet/>;
+    <Outlet />;
   </>
 };
 
