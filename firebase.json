@@ -1,0 +1,15 @@
+{
+    "hosting": [
+      {
+        "site": "react-keygen-boilerplate",
+        "public": "dist",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -18,6 +18,9 @@ const Theme: ThemeConfig = {
             defaultBorderColor: '#0068fa',
             defaultColor: '#0068fa',
         },
+        Card: {
+            colorBorderSecondary: "rgb(11,11,11)"
+        }
     },
 }
 const ThemeProvider: React.FC<IThemeProvider> = ({ children }) => {

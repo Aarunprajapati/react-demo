@@ -44,40 +44,6 @@ const pwaOptions: Partial<VitePWAOptions> = {
     },
 }
 
-// Replace Plugin Options
-// const replaceOptions = {
-//   __DATE__: new Date().toISOString(),
-//   preventAssignment: true,
-// };
-
-// // Conditional PWA options based on environment variables
-// const claims = process.env.CLAIMS === "true";
-// const reload = process.env.RELOAD_SW === "true";
-// const selfDestroying = process.env.SW_DESTROY === "true";
-
-// if (process.env.SW === "true") {
-//   pwaOptions.srcDir = "src";
-//   pwaOptions.filename = claims ? "claims-sw.ts" : "prompt-sw.ts";
-//   pwaOptions.strategies = "injectManifest";
-//   (pwaOptions.manifest as Partial<ManifestOptions>).name = "PWA Inject Manifest";
-//   (pwaOptions.manifest as Partial<ManifestOptions>).short_name = "PWA Inject";
-//   pwaOptions.injectManifest = {
-//     minify: false,
-//     enableWorkboxModulesLogs: true,
-//   };
-// }
-
-// if (claims) {
-//   pwaOptions.registerType = "autoUpdate";
-// }
-
-// if (reload) {
-//   (replaceOptions as any).__RELOAD_SW__ = "true";
-// }
-// if (selfDestroying) {
-//   pwaOptions.selfDestroying = selfDestroying;
-// }
-
 // Export Vite Configuration
 export default defineConfig({
     build: {

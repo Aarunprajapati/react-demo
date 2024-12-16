@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "react-boilerplat-df9a1"
+  },
+  "targets": {
+    "react-boilerplat-df9a1": {
+      "hosting": {
+        "react-keygen-boilerplate": [
+          "react-keygen-boilerplate"
+        ]
+      }
+    }
+  }
+}

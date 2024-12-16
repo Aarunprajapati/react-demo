@@ -1,5 +1,5 @@
 
-import { Button, Checkbox, Form, Input, Typography } from 'antd';
+import { Button, Card, Checkbox, Form, Input, Typography } from 'antd';
 
 const LoginLayout = (props: any) => {
 
@@ -11,8 +11,7 @@ const LoginLayout = (props: any) => {
     const { Text } = Typography
     return (
 
-        <div className='flex items-center justify-center w-full h-screen'>
-
+        <Card className='flex items-center justify-center w-full h-full'>
             <Form
                 name='login'
                 form={LoginForm}
@@ -55,7 +54,7 @@ const LoginLayout = (props: any) => {
                     <Text> Sign up now </Text>
                 </div>
             </Form>
-        </div>
+        </Card>
     )
 }
 
